@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.laphonegap.helloworld"
+        versionCode="10" 
+        version   = "1.0.0">
+		
+	<!-- For more information about using config.xml, see
+		https://build.phonegap.com/docs/config-xml -->
+
+    <!-- versionCode is optional and Android only -->
+    
+    <!-- define which version of phonegap to use, not required -->
+    <preference name="phonegap-version" value="1.9.0" />
+	
+	<!-- this app will have no device api access -->
+	<preference name="permissions" value="none"/>
+	
+	<!-- the default icon to be use, for BlackBerry must be less than 16kb -->
+	<icon src="youtube_logo.jpg" />
+
+	<!-- the default splash screen to use -->
+	<!-- iOS -->
+	<gap:splash src="youtube_logo.jpg" width="320" height="480" />
+
+	<!-- Android -->
+	<gap:splash src="youtube_logo.jpg" gap:platform="android" gap:density="mdpi" />
+
+	<!-- BlackBerry -->
+	<gap:splash src="youtube_logo.jpg" gap:platform="blackberry" />
+	
+	<!-- Windows Phone -->
+	<gap:splash src="youtube_logo.jpg" gap:platform="winphone" />
+
+    <name>Hello Youtube</name>
+
+    <description>
+        Simple example for phonegap usage. 
+    </description>
+
+    <author href="https://www.youtube.com/" email="vkaadheeshwar95@gmail.org">
+        VK Aadheeshwar 
+    </author>
+
+</widget>
